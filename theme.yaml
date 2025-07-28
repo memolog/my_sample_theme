@@ -1,26 +1,19 @@
 id:          my_theme
-label:       MY Theme
-author_name: Yutaka Yamaugchi
-version:     1.0.0
-class:       website
-thumbnail_file_small: 'thumb-small.png'
 elements:
   blog_static_files:
     component: ~
     data:
-      - common
+      - images
+      - js
     importer: blog_static_files
   template_set:
-    component: core
-    base_path: themes
-    importer:  template_set
-    name:      template set
+    component: ~
     data:
-      require:   1
+      base_path: templates
+      label: 'exported_template set'
       templates:
         index:
-          index:
-            filename:   index.html.mtml
-            label:      "メインページ"
-            outfile:    index.html
+          index_page:
+            label: インデックスページ
+            outfile: index.html
             rebuild_me: 1

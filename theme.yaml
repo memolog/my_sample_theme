@@ -16,13 +16,11 @@ elements:
     importer:  template_set
     name:      template set
     data:
-      label:     media
-      base_path: themes
       require:   1
       templates:
         index:
           index:
             filename:   index.html.mtml
-            label:      __MAIN_INDEX
+            label:      "メインページ"
             outfile:    index.html
             rebuild_me: 1
